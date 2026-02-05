@@ -1,0 +1,6 @@
+@import "tailwindcss";
+:root:has(input.theme-controller[value=coffee]:checked),[data-theme="coffee"] { /* limonade is the name of the custom theme */
+  color-scheme: light;
+  --color-base-100: oklch(15.757% 0.03954 253.233 / 0.077);
+  /* ...rest of CSS variables like above example */
+}
