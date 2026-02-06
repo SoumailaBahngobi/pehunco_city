@@ -8,7 +8,7 @@ import tata from  '../../assets/img/tata.jpg'
 
 function Home() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-16 ">
       <section
 
       >

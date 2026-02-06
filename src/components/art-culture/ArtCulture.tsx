@@ -36,13 +36,13 @@ const ArtCulture = () => {
 
       {/* Arts Section */}
       <section className="space-y-8">
-        <h2 className="text-4xl font-bold text-white">Les Arts de Pehunco</h2>
+        <h2 className="">Les Arts de Pehunco</h2>
         <div className="">
           {arts.map((art, idx) => (
             <div key={idx} className="">
               <div className="card-body">
-                <h3 className="l">{art.title}</h3>
-                <p className="text-slate-300">{art.description}</p>
+                <h3 className="">{art.title}</h3>
+                <p className="">{art.description}</p>
               </div>
             </div>
           ))}
@@ -54,12 +54,12 @@ const ArtCulture = () => {
         <h2 className="">Événements & Festivals</h2>
         <div className="">
           {festivals.map((fest, idx) => (
-            <div key={idx} className="card bg-gradient-to-br from-purple-900/40 to-slate-800 shadow-lg border border-purple-700/50 hover:border-purple-500 transition">
+            <div key={idx} className="">
               <div className="">
-                <h3 className="card-title text-white text-lg">{fest.name}</h3>
+                <h3 className="">{fest.name}</h3>
                 <div className="space-y-2">
-                  <p className="text-sm text-purple-300 font-semibold">{fest.period}</p>
-                  <p className="text-slate-300">{fest.description}</p>
+                  <p className="">{fest.period}</p>
+                  <p className="">{fest.description}</p>
                 </div>
               </div>
             </div>
@@ -69,15 +69,15 @@ const ArtCulture = () => {
 
       {/* Artisans Section */}
       <section className="space-y-8">
-        <h2 className="text-4xl font-bold text-white">Nos Artisans</h2>
-        <p className="text-slate-300 leading-relaxed text-lg">
+        <h2 className="">Nos Artisans</h2>
+        <p className="">
           Pehunco abrite une communauté vibrant d'artisans talentueux qui perpétuent les traditions 
           tout en créant des œuvres contemporaines. Ces créateurs apportent vie, couleur et beauté 
           à notre communauté par leurs talents uniques.
         </p>
-        <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-2xl p-8 text-center border border-blue-500/30">
-          <p className="text-lg font-semibold mb-4 text-white">Découvrez le travail exceptionnel de nos artisans locaux</p>
-          <button className="btn btn-primary">Contacter les Artisans</button>
+        <div className="">
+          <p className="">Découvrez le travail exceptionnel de nos artisans locaux</p>
+          <button className="btn btn-primary hover:scale-105 transition-transform">Contacter les Artisans</button>
         </div>
       </section>
     </div>

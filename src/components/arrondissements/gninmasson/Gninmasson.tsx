@@ -19,10 +19,10 @@ const Gninmasson = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className="relative z-10 hero-content text-center">
+        <div className="">
           <div>
-            <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">🌾 Gninmasson</h1>
-            <p className="text-lg drop-shadow-lg">Une zone dynamique et prospère</p>
+            <h1 className="">🌾 Gninmasson</h1>
+            <p className="">Une zone dynamique et prospère</p>
           </div>
         </div>
       </div>
@@ -31,8 +31,8 @@ const Gninmasson = () => {
         <div className="lg:col-span-2 space-y-8">
           {/* Overview */}
           <section className="space-y-4">
-            <h2 className="text-4xl font-bold text-white">Présentation</h2>
-            <p className="text-slate-300 leading-relaxed text-lg">
+            <h2 className="">Présentation</h2>
+            <p className="">
               Gninmasson est un arrondissement dynamique caractérisé par une population engagée 
               et une économie diversifiée basée principalement sur l'agriculture et l'élevage. 
               La zone bénéficie de bonnes ressources naturelles et d'une forte cohésion communautaire.
@@ -41,12 +41,12 @@ const Gninmasson = () => {
 
           {/* Key Features */}
           <section className="space-y-4">
-            <h2 className="text-4xl font-bold text-white">Caractéristiques Principales</h2>
-            <div className="grid grid-cols-1 gap-4">
+            <h2 className="">Caractéristiques Principales</h2>
+            <div className="">
               {features.map((feature, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-xl p-6 border border-green-500/30 hover:border-green-500 transition shadow-lg">
-                  <h3 className="text-xl font-bold text-green-400 mb-2">{feature.title}</h3>
-                  <p className="text-slate-300">{feature.description}</p>
+                <div key={idx} className=" ">
+                  <h3 className="">{feature.title}</h3>
+                  <p className="">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -54,44 +54,43 @@ const Gninmasson = () => {
 
           {/* Economic Activities */}
           <section className="space-y-4">
-            <h2 className="text-4xl font-bold text-white">Activités Économiques</h2>
-            <p className="text-slate-300 leading-relaxed text-lg">
+            <h2 className="">Activités Économiques</h2>
+            <p className="">
               L'économie de Gninmasson est principalement basée sur :
             </p>
             <div className="grid grid-cols-1 gap-3">
-              <div className="bg-gradient-to-br from-green-900/30 to-slate-800 rounded-xl p-4 border-l-4 border-green-500 shadow-lg">
-                <p className="font-semibold text-green-400 text-lg">🌾 Agriculture</p>
-                <p className="text-slate-300 text-sm">Cultures vivrières et commerce</p>
+              <div className="">
+                <p className="">Cultures vivrières et commerce</p>
               </div>
-              <div className="bg-gradient-to-br from-amber-900/30 to-slate-800 rounded-xl p-4 border-l-4 border-amber-500 shadow-lg">
-                <p className="font-semibold text-amber-400 text-lg">🐄 Élevage</p>
-                <p className="text-slate-300 text-sm">Bétail et volailles</p>
+              <div className="">
+                <p className="">🐄 Élevage</p>
+                <p className="">Bétail et volailles</p>
               </div>
-              <div className="bg-gradient-to-br from-blue-900/30 to-slate-800 rounded-xl p-4 border-l-4 border-blue-500 shadow-lg">
-                <p className="font-semibold text-blue-400 text-lg">🏪 Commerce</p>
-                <p className="text-slate-300 text-sm">Petit commerce et échanges</p>
+              <div className="">
+                <p className="">🏪 Commerce</p>
+                <p className="">Petit commerce et échanges</p>
               </div>
             </div>
           </section>
         </div>
 
         <div>
-          <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl shadow-xl border border-slate-600 sticky top-20 p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">ℹ️ Informations</h3>
+          <div className="">
+            <h3 className="">ℹ️ Informations</h3>
             <div className="space-y-6">
               <div>
-                <p className="text-sm text-slate-400 mb-1">Population</p>
-                <p className="text-3xl font-bold text-green-400">~1,500+</p>
+                <p className="">Population</p>
+                <p className="">~1,500+</p>
               </div>
-              <div className="h-px bg-gradient-to-r from-slate-600 to-transparent"></div>
+              <div className=""></div>
               <div>
-                <p className="text-sm text-slate-400 mb-1">Caractère</p>
-                <p className="text-3xl font-bold text-yellow-400">Rural</p>
+                <p className="">Caractère</p>
+                <p className="">Rural</p>
               </div>
-              <div className="h-px bg-gradient-to-r from-slate-600 to-transparent"></div>
+              <div className=""></div>
               <div>
-                <p className="text-sm text-slate-400 mb-1">Économie</p>
-                <p className="text-3xl font-bold text-amber-400">Agriculture</p>
+                <p className="">Économie</p>
+                <p className="">Agriculture</p>
               </div>
             </div>
           </div>

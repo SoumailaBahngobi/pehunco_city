@@ -3,7 +3,9 @@ import cabane from '../../assets/img/cabane.jpg'
 
 const Histoire = () => {
   return (
-    <div className="space-y-12">
+    <div className="space-y-12" 
+     
+    >
       <div 
         className="rounded-2xl p-12 text-white relative overflow-hidden shadow-2xl"
         style={{
@@ -29,7 +31,7 @@ const Histoire = () => {
           <div className="">
             <div className="">
               <h3 className="">Les Origines (1900s)</h3>
-              <p className="text-slate-300">
+              <p className="">
                 Pehunco a ses racines profondément ancrées dans les traditions et la culture locale. 
                 La communauté s'est progressivement développée autour de l'agriculture et de l'élevage, 
                 formant le tissu social qui persiste aujourd'hui.
@@ -53,7 +55,7 @@ const Histoire = () => {
           <div className="">
             <div className="">
               <h3 className="">Ère Contemporaine (1980s-2000s)</h3>
-              <p className="text-slate-300">
+              <p className="">
                 Pehunco a continué à se développer en preservant ses valeurs traditionnelles. 
                 L'éducation, la santé et les services communautaires se sont améliorés, 
                 offrant une meilleure qualité de vie à ses habitants.
@@ -65,7 +67,7 @@ const Histoire = () => {
           <div className="">
             <div className="">
               <h3 className="">Aujourd'hui et Demain (2000s-Présent)</h3>
-              <p className="text-slate-300">
+              <p className="">
                 Aujourd'hui, Pehunco regarde vers l'avenir avec optimisme. La communauté travaille 
                 au développement durable, à l'innovation et à l'amélioration continue tout en 
                 honorant son riche héritage culturel et historique.
@@ -77,8 +79,8 @@ const Histoire = () => {
 
       {/* Cultural Heritage */}
       <section className="space-y-6">
-        <h2 className="text-4xl font-bold text-white">Patrimoine Culturel</h2>
-        <p className="text-slate-300 leading-relaxed text-lg">
+        <h2 className="">Patrimoine Culturel</h2>
+        <p className="">
           Le patrimoine culturel de Pehunco est un élément central de son identité. 
           Les traditions, les arts, la musique et les festivals reflètent les valeurs 
           et l'âme de notre communauté, transmises de génération en génération.

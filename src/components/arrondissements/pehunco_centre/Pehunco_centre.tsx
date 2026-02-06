@@ -31,8 +31,8 @@ const Pehunco_centre = () => {
         <div className="">
           {/* Overview */}
           <section className="space-y-4">
-            <h2 className="text-4xl font-bold text-white">Présentation</h2>
-            <p className="text-slate-300 leading-relaxed text-lg">
+            <h2 className="">Présentation</h2>
+            <p className="">
               Pehunco Centre est le cœur administratif, économique et culturel de la commune. 
               C'est le siège du gouvernement local et le principal centre d'activité économique. 
               La population y est plus dense et l'infrastructure plus développée que dans les autres arrondissements.
@@ -41,12 +41,12 @@ const Pehunco_centre = () => {
 
           {/* Key Features */}
           <section className="space-y-4">
-            <h2 className="text-4xl font-bold text-white">Caractéristiques Principales</h2>
+            <h2 className="text-4xl font-bold ">Caractéristiques Principales</h2>
             <div className="">
               {features.map((feature, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-xl p-6 border border-purple-500/30 hover:border-purple-500 transition shadow-lg">
-                  <h3 className="text-xl font-bold text-purple-400 mb-2">{feature.title}</h3>
-                  <p className="text-slate-300">{feature.description}</p>
+                <div key={idx} className="mb-4">
+                  <h3 className="text-xl font-bold  mb-2">{feature.title}</h3>
+                  <p className="">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -54,22 +54,22 @@ const Pehunco_centre = () => {
 
           {/* Infrastructure */}
           <section className="space-y-4">
-            <h2 className="text-4xl font-bold text-white">Infrastructures</h2>
+            <h2 className="">Infrastructures</h2>
             <div className="">
-              <div className="bg-gradient-to-br from-blue-900/30 to-slate-800 rounded-xl p-6 border border-blue-500/30 shadow-lg">
-                <h3 className="font-bold mb-3 text-blue-400 text-lg">📚 Éducation</h3>
-                <ul className="space-y-2 text-slate-300">
-                  <li>✓ Écoles primaires</li>
-                  <li>✓ Collèges</li>
-                  <li>✓ Formation professionnelle</li>
+              <div className="">
+                <h3 className="">Éducation</h3>
+                <ul className="">
+                  <li> Écoles primaires</li>
+                  <li> Collèges</li>
+                  <li>Formation professionnelle</li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-green-900/30 to-slate-800 rounded-xl p-6 border border-green-500/30 shadow-lg">
-                <h3 className="font-bold mb-3 text-green-400 text-lg">🏥 Services</h3>
-                <ul className="space-y-2 text-slate-300">
-                  <li>✓ Centre de santé</li>
-                  <li>✓ Administration locale</li>
-                  <li>✓ Services postaux</li>
+              <div className="">
+                <h3 className=""> Services</h3>
+                <ul className="space-y-2 text-slate-30">
+                  <li> Centre de santé</li>
+                  <li> Administration locale</li>
+                  <li>Services postaux</li>
                 </ul>
               </div>
             </div>
@@ -77,22 +77,22 @@ const Pehunco_centre = () => {
         </div>
 
         <div>
-          <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl shadow-xl border border-slate-600 sticky top-20 p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">ℹ️ Informations</h3>
+          <div className="">
+            <h3 className="">Informations</h3>
             <div className="space-y-6">
               <div>
-                <p className="text-sm text-slate-400 mb-1">Population</p>
-                <p className="text-3xl font-bold text-blue-400">~2,500+</p>
+                <p className="">Population</p>
+                <p className="">~2,500+</p>
               </div>
-              <div className="h-px bg-gradient-to-r from-slate-600 to-transparent"></div>
+              <div className="t"></div>
               <div>
-                <p className="text-sm text-slate-400 mb-1">Rôle</p>
-                <p className="text-3xl font-bold text-purple-400">Capital</p>
+                <p className="">Rôle</p>
+                <p className="">Capital</p>
               </div>
-              <div className="h-px bg-gradient-to-r from-slate-600 to-transparent"></div>
+              <div className=""></div>
               <div>
-                <p className="text-sm text-slate-400 mb-1">Infrastructure</p>
-                <p className="text-3xl font-bold text-green-400">Élevée</p>
+                <p className="">Infrastructure</p>
+                <p className="">Élevée</p>
               </div>
             </div>
           </div>

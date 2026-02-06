@@ -19,20 +19,20 @@ const Tobre = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className="relative z-10 hero-content text-center">
+        <div className="">
           <div>
-            <h1 className="text-5xl font-bold mb-4 drop-shadow-lg"> Tobré</h1>
-            <p className="text-lg drop-shadow-lg">Authenticité et traditions</p>
+            <h1 className=""> Tobré</h1>
+            <p className="">Authenticité et traditions</p>
           </div>
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2 space-y-8">
+      <div className="">
+        <div className="">
           {/* Overview */}
           <section className="space-y-4">
-            <h2 className="text-4xl font-bold text-white">Présentation</h2>
-            <p className="text-slate-300 leading-relaxed text-lg">
+            <h2 className="">Présentation</h2>
+            <p className="">
               Tobré est un arrondissement caractérisé par un fort attachement aux traditions 
               et une communauté très soudée. Bien que moins urbanisé que Pehunco Centre, 
               il offre une vie communautaire riche avec des valeurs profondément ancrées 
@@ -42,12 +42,12 @@ const Tobre = () => {
 
           {/* Key Features */}
           <section className="space-y-4">
-            <h2 className="text-4xl font-bold text-white">Caractéristiques Principales</h2>
+            <h2 className="">Caractéristiques Principales</h2>
             <div className="">
               {features.map((feature, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-xl p-6 border border-orange-500/30 hover:border-orange-500 transition shadow-lg">
-                  <h3 className="text-xl font-bold text-orange-400 mb-2">{feature.title}</h3>
-                  <p className="text-slate-300">{feature.description}</p>
+                <div key={idx} className="">
+                  <h3 className="">{feature.title}</h3>
+                  <p className="">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -55,45 +55,45 @@ const Tobre = () => {
 
           {/* Cultural Heritage */}
           <section className="space-y-4">
-            <h2 className="text-4xl font-bold text-white">Patrimoine Culturel</h2>
-            <p className="text-slate-300 leading-relaxed text-lg mb-4">
+            <h2 className="">Patrimoine Culturel</h2>
+            <p className="">
               Tobré est le gardien des traditions ancestrales de Pehunco. Les coutumes, 
               les cérémonies et les pratiques culturelles y sont particulièrement préservées et respectées.
             </p>
             <div className="space-y-3">
-              <div className="bg-gradient-to-br from-orange-900/30 to-slate-800 rounded-xl p-4 border-l-4 border-orange-500 shadow-lg">
-                <p className="font-semibold text-orange-400 text-lg"> Traditions Cérémoniales</p>
-                <p className="text-slate-300 text-sm">Rites et cérémonies traditionnelles</p>
+              <div className=" ">
+                <p className=""> Traditions Cérémoniales</p>
+                <p className="">Rites et cérémonies traditionnelles</p>
               </div>
-              <div className="bg-gradient-to-br from-amber-900/30 to-slate-800 rounded-xl p-4 border-l-4 border-amber-500 shadow-lg">
-                <p className="font-semibold text-amber-400 text-lg"> Arts et Métiers</p>
-                <p className="text-slate-300 text-sm">Artisanat traditionnel et savoir-faire</p>
+              <div className="">
+                <p className=""> Arts et Métiers</p>
+                <p className="">Artisanat traditionnel et savoir-faire</p>
               </div>
-              <div className="bg-gradient-to-br from-rose-900/30 to-slate-800 rounded-xl p-4 border-l-4 border-rose-500 shadow-lg">
-                <p className="font-semibold text-rose-400 text-lg"> Communauté</p>
-                <p className="text-slate-300 text-sm">Vie communautaire harmonieuse et organisée</p>
+              <div className="">
+                <p className=""> Communauté</p>
+                <p className="">Vie communautaire harmonieuse et organisée</p>
               </div>
             </div>
           </section>
         </div>
 
         <div>
-          <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl shadow-xl border border-slate-600 sticky top-20 p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">Informations</h3>
+          <div className="">
+            <h3 className="">Informations</h3>
             <div className="space-y-6">
               <div>
-                <p className="text-sm text-slate-400 mb-1">Population</p>
-                <p className="text-3xl font-bold text-orange-400">~1,000+</p>
+                <p className="">Population</p>
+                <p className="">~1,000+</p>
               </div>
-              <div className="h-px bg-gradient-to-r from-slate-600 to-transparent"></div>
+              <div className=""></div>
               <div>
-                <p className="text-sm text-slate-400 mb-1">Caractère</p>
-                <p className="text-3xl font-bold text-amber-400">Traditionnel</p>
+                <p className="">Caractère</p>
+                <p className="">Traditionnel</p>
               </div>
-              <div className="h-px bg-gradient-to-r from-slate-600 to-transparent"></div>
+              <div className=""></div>
               <div>
-                <p className="text-sm text-slate-400 mb-1">Culture</p>
-                <p className="text-3xl font-bold text-rose-400">Forte</p>
+                <p className="">Culture</p>
+                <p className="">Forte</p>
               </div>
             </div>
           </div>
