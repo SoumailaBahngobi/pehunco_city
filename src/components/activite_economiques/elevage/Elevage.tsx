@@ -81,26 +81,57 @@ const Elevage = () => {
           </section>
         </div>
 
+        
         <div>
           <div className="">
-            <h3 className="">📊 Impact Économique</h3>
+            <h1 className="text-2xl font-bold">Types d'élevage et espèces</h1>
             <div className="space-y-6">
               <div>
-                <p className="">Contribution Revenu</p>
-                <p className="">~20%</p>
+                <h3> Bovins</h3>
+                <p className="">Principalement au nord, confrontés à des défis de ressources, l'élevage évolue vers la sédentarisation. La production laitière se développe, utilisant des matières locales comme le tourteau de soja et de palmiste.</p>
+                <p className=""></p>
               </div>
-              <div className=""></div>
               <div>
-                <p className="">Familles Impliquées</p>
-                <p className="">~40%</p>
+                <h3>Volailles</h3>
+                <p className="">L'élevage de poules, pintades, dindes et canards est très répandu, souvent géré par des femmes et des jeunes</p>
               </div>
-              <div className=""></div>
               <div>
-                <p className="">Nombre Animaux</p>
-                <p className="">~9,500+</p>
+                <h3>Petits ruminants et autres</h3>
+                <p className="">Élevage de moutons (dont la race Djallonké), chèvres, porcs et aulacodes</p>
               </div>
+              <div>
+                <h3>Pisciculture</h3>
+              </div>
+
             </div>
           </div>
+
+          <section className="space-y-4">
+            <h2 className="">Caractéristiques et enjeux</h2>
+            <div>
+              <h3>Role Economique</h3>
+              <p className="">L'élevage, y compris à petite échelle, constitue une source de revenus pour les ménages, permettant l'achat de nourriture, les frais scolaires et la santé.</p>
+            </div>
+
+            <div>
+              <h3>Modernisation</h3>
+              <p className="">L'introduction de pratiques modernes, telles que l'amélioration des races et l'utilisation de fourrages améliorés, est en cours pour augmenter la productivité et la durabilité. Des centres comme le Centre SONGHAÏ impulsent des techniques modernes et une meilleure gestion sanitaire</p>
+            </div>
+
+            <div>
+              <h3>Défis Sanitaires et alimentaires</h3>
+              <p className="">Les défis sanitaires, tels que les maladies animales et les problèmes d'hygiène, ainsi que les défis liés à l'alimentation des animaux, sont des enjeux majeurs dans l'élevage à Pehunco. <br />
+              Les maladies (peste porcine, grippe aviaire) et la rareté des aliments en saison sèche nécessitent une meilleure prévention et gestion.
+              </p>
+            </div>
+            <div>
+              <h3>Agro-pastoralisme</h3>
+              <p className="">L'élevage est souvent intégré à l'agriculture, avec des animaux pâturant les résidus de culture et fournissant du fumier pour fertiliser les champs, créant ainsi un système agro-pastoral durable. <br />
+              Le secteur s'oriente vers des pratiques durables, intégrant l'agriculture et l'élevage pour optimiser les rendements. 
+              </p>
+            </div>
+          </section>
+
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 
+import { Fish } from 'lucide-react'
 import cabane1 from '../../../assets/img/cabane1.jpg'
 
 const Peche = () => {
@@ -11,7 +12,7 @@ const Peche = () => {
   return (
     <div className="space-y-12">
       {/* Header avec Image de Fond */}
-      <div 
+      <div
         className="rounded-2xl p-12 text-white relative overflow-hidden shadow-2xl"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${cabane1})`,
@@ -21,7 +22,8 @@ const Peche = () => {
       >
         <div className="">
           <div>
-            <h1 className="">🐟 Pêche</h1>
+            <h1 className="">   <Fish className="w-12 h-12 text-blue-400" >Pêche </Fish> </h1>
+
             <p className="">Une tradition et une ressource</p>
           </div>
         </div>
@@ -33,8 +35,8 @@ const Peche = () => {
           <section className="space-y-4">
             <h2 className="">Aperçu</h2>
             <p className="">
-              La pêche est une activité économique minoritaire mais importante à Pehunco. 
-              Elle fournit une source de protéines nutritive et génère des revenus supplémentaires pour les familles. 
+              La pêche est une activité économique minoritaire mais importante à Pehunco.
+              Elle fournit une source de protéines nutritive et génère des revenus supplémentaires pour les familles.
               Bien que moins développée que l'agriculture ou l'élevage, elle reste une ressource précieuse.
             </p>
           </section>
@@ -68,14 +70,14 @@ const Peche = () => {
               <div className="">
                 <h3 className="">Pêche Traditionnelle</h3>
                 <p className="">
-                  Utilisation de techniques éprouvées, filets à main, hameçons et pièges. 
+                  Utilisation de techniques éprouvées, filets à main, hameçons et pièges.
                   Respectueuse de l'environnement et durable.
                 </p>
               </div>
               <div className="">
                 <h3 className="">Pisciculture</h3>
                 <p className="text-slate-300">
-                  Élevage de poissons dans des bassins, permettant un approvisionnement régulier 
+                  Élevage de poissons dans des bassins, permettant un approvisionnement régulier
                   et une meilleure productivité.
                 </p>
               </div>
