@@ -16,6 +16,7 @@ import Peche from './components/activite_economiques/peche/Peche'
 import Pehunco_centre from './components/arrondissements/pehunco_centre/Pehunco_centre'
 import Tobre from './components/arrondissements/tobre/Tobre'
 import Gninmasson from './components/arrondissements/gninmasson/Gninmasson'
+import Commande from './commande/Commande'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="pehunco-centre" element={<Pehunco_centre />} />
           <Route path="tobre" element={<Tobre />} />
           <Route path="gninmasson" element={<Gninmasson />} />
+          <Route path="commande" element={<Commande/>} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
