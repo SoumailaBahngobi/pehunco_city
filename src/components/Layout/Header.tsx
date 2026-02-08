@@ -53,6 +53,12 @@ const Header = () => {
                             Accueille
                         </a>
 
+                        <a
+                            href="/mairie"
+                            className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">
+                            La Mairie
+                        </a>
+
                         <Popover className="relative">
                             <PopoverButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">
                                 Arrondissements
@@ -118,10 +124,10 @@ const Header = () => {
                                 ))}
                             </DisclosurePanel>
                         </Disclosure>
-                        <a href="/histoire" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
+                        <a href="/histoire" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">
                             Histoire
                         </a>
-                        <a href="/art-culture" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
+                        <a href="/art-culture" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">
                             Art et culture
                         </a>
                     </PopoverGroup>

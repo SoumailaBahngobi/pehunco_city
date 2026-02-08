@@ -17,6 +17,7 @@ import Pehunco_centre from './components/arrondissements/pehunco_centre/Pehunco_
 import Tobre from './components/arrondissements/tobre/Tobre'
 import Gninmasson from './components/arrondissements/gninmasson/Gninmasson'
 import Commande from './commande/Commande'
+import Mairie from './components/mairie/Mairie'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
+          <Route path="mairie" element={<Mairie />} />
           <Route path="about" element={<About />} />
           <Route path="histoire" element={<Histoire />} />
           <Route path="agriculture" element={<Agriculture />} />
