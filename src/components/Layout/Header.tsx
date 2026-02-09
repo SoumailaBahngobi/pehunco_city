@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ba from '../../assets/img/baobab.jpg'
-import {Dialog,DialogPanel,Disclosure,DisclosureButton,DisclosurePanel,Popover,PopoverButton,PopoverGroup,PopoverPanel,} from '@headlessui/react'
-import {ArrowPathIcon,Bars3Icon,ChartPieIcon,CursorArrowRaysIcon,FingerPrintIcon,SquaresPlusIcon,XMarkIcon,} from '@heroicons/react/24/outline'
+import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel, } from '@headlessui/react'
+import { ArrowPathIcon, Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon, } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const arrondissements = [
@@ -73,20 +73,20 @@ const Header = () => {
                                     {arrondissements.map((item) => (
                                         <div
                                             key={item.name}
-                                            className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50 dark:hover:bg-white/5"
+                                            className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
                                         >
-                                           <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white dark:bg-gray-700/50 dark:group-hover:bg-gray-700">
+                                            {/*<div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white dark:bg-gray-700/50 dark:group-hover:bg-gray-700">
                                                 <item.icon
                                                     aria-hidden="true"
                                                     className="size-6 text-gray-600 group-hover:text-indigo-600 dark:text-gray-400 dark:group-hover:text-white"
                                                 />
-                                            </div>
-                                           <div className="flex-auto">
+                                            </div>*/}
+                                            <div className="flex-auto">
                                                 <a href={item.href} className="block font-semibold text-gray-900 dark:text-white">
                                                     {item.name}
                                                     <span className="absolute inset-0" />
                                                 </a>
-                                                <p className="mt-1 text-gray-600 dark:text-gray-400">{item.description}</p>
+                                                {/*  <p className="mt-1 text-gray-600 dark:text-gray-400">{item.description}</p>*/}
                                             </div>
                                         </div>
                                     ))}
@@ -125,7 +125,7 @@ const Header = () => {
                             </DisclosurePanel>
                         </Disclosure>
                         <a href="/histoire" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">
-                            Histoire
+                            Histoire et Géographie
                         </a>
                         <a href="/art-culture" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5">
                             Art et culture
@@ -166,6 +166,12 @@ const Header = () => {
                                         href="/home"
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
                                     >
+                                        La Mairie
+                                    </a>
+                                    <a
+                                        href="/home"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
+                                    >
                                         Accueille
                                     </a>
 
@@ -175,7 +181,7 @@ const Header = () => {
                                             <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
                                         </DisclosureButton>
                                         <DisclosurePanel className="mt-2 space-y-2">
-                                            {[...arrondissements, ...callsToAction].map((item) => (
+                                            {[...arrondissements].map((item) => (
                                                 <DisclosureButton
                                                     key={item.name}
                                                     as="a"
@@ -193,7 +199,7 @@ const Header = () => {
                                             <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
                                         </DisclosureButton>
                                         <DisclosurePanel className="mt-2 space-y-2">
-                                            {[...activiteEconomiques, ...callsToAction].map((item) => (
+                                            {[...activiteEconomiques].map((item) => (
                                                 <DisclosureButton
                                                     key={item.name}
                                                     as="a"
@@ -207,9 +213,9 @@ const Header = () => {
                                     </Disclosure>
                                     <a
                                         href="/histoire"
-                            className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
+                                        className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
                                     >
-                                        Histoire
+                                        Histoire et Géographie
                                     </a>
                                     <a
                                         href="/art-culture"
