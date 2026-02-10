@@ -1,7 +1,8 @@
-import type { ReactNode } from 'react'  // Import type-only
+import type { ReactNode } from 'react'
+import { useState } from 'react'
 import { 
   Building2, Users, FileText, Settings, Landmark, 
-  BarChart, TreePine, Wrench, Cpu, Archive, 
+  BarChart, TreePine, Wrench, Cpu, 
   Shield, Search, Download, ChevronDown, ChevronUp
 } from 'lucide-react'
 
