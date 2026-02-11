@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Users, Leaf } from 'lucide-react'
+import { MapPin, Users, Leaf } from 'lucide-react'
 import cabane from '../../assets/img/cabane.jpg'
 import paysage from '../../assets/img/paysage_pehunco.jpg'
 

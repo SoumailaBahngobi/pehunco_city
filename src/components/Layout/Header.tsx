@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ba from '../../assets/img/baobab.jpg'
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel, } from '@headlessui/react'
-import { ArrowPathIcon, Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon, } from '@heroicons/react/24/outline'
+import { Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, XMarkIcon, } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const arrondissements = [

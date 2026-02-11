@@ -5,8 +5,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/home/Home'
 import About from './components/about/About'
 import Layout from './components/Layout/Layout'
-import { Outlet } from "react-router";
-import g1 from './assets/img/guerra1.jpg'
 import Histoire from './components/histoire/Histoire'
 import Contact from './components/contact/Contact'
 import Agriculture from './components/activite_economiques/agriculture/Agriculture'
@@ -26,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="" element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="mairie" element={<Mairie />} />
           <Route path="about" element={<About />} />
