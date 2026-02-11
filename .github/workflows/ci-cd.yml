@@ -1,142 +1,18 @@
-name: CI/CD Pipeline
+# .gitlab-ci.yml - VERSION CORRIGÉE
+image: node:18-alpine
 
-on:
-  push:
-    branches: [ develop, main ]
-  pull_request:
-    branches: [ main ]
-
-env:
-  NODE_VERSION: '18.x'
-
-jobs:
-  # Phase 1: Code Quality
-  quality:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-        cache: 'npm'
-    
-    - name: Install dependencies
-      run: npm ci
-    
-    - name: Linting
-      run: |
-        if [ -f "package.json" ] && grep -q '"lint"' package.json; then
-          npm run lint
-        else
-          echo "Pas de script lint"
-        fi
-    
-    - name: Type Check
-      run: |
-        if [ -f "package.json" ] && grep -q '"type-check"' package.json; then
-          npm run type-check
-        else
-          echo "Pas de script type-check"
-        fi
-    
-    - name: Security Audit
-      run: npm audit --audit-level=high || true
-
-  # Phase 2: Tests
-  test:
-    runs-on: ubuntu-latest
-    needs: quality
-    
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-        cache: 'npm'
-    
-    - name: Install dependencies
-      run: npm ci
-    
-    - name: Run Tests
-      run: |
-        if [ -f "package.json" ] && grep -q '"test"' package.json; then
-          npm test -- --coverage --watchAll=false
-        else
-          echo "Pas de tests"
-        fi
-    
-    - name: Upload Coverage
-      uses: codecov/codecov-action@v3
-      with:
-        file: ./coverage/lcov.info
-        fail_ci_if_error: false
-
-  # Phase 3: Build
-  build:
-    runs-on: ubuntu-latest
-    needs: test
-    
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-        cache: 'npm'
-    
-    - name: Install dependencies
-      run: npm ci
-    
-    - name: Build Production
-      run: npm run build
-    
-    - name: Analyze Bundle
-      run: |
-        if [ -f "package.json" ] && grep -q '"analyze"' package.json; then
-          npm run analyze
-        fi
-    
-    - name: Upload Build Artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: production-build
-        path: build/
-        retention-days: 7
-
-  # Phase 4: Deploy (seulement sur main)
-  deploy-production:
-    runs-on: ubuntu-latest
-    needs: build
-    if: github.ref == 'refs/heads/main'
-    
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Download Build Artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: production-build
-        path: build
-    
-    - name: Deploy to Production
-      env:
-        DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-      run: |
-        # Ici ta commande de déploiement
-        echo "Déploiement sur la production..."
-        # Exemple: scp -r build/* user@server:/var/www/html/
-    
-    - name: Notify Success
-      uses: rtCamp/action-slack-notify@v2
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_CHANNEL: deployments
-        SLACK_COLOR: good
-        SLACK_MESSAGE: '✅ Déploiement réussi sur Production'
-        SLACK_TITLE: 'Nouveau déploiement React'
+pages:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build
+    - rm -rf public
+    - mkdir public
+    - cp -r build/* public/
+    # CRITIQUE: Copie index.html pour les routes
+    - cp public/index.html public/404.html
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
